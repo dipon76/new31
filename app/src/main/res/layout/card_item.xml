@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cont_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_state_drawable"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:id="@+id/cont_card_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          >
+
+            <ImageView
+                android:id="@+id/weatherIconImageDetail"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:padding="36dp"
+                android:background="#5C6BC0"
+                android:src="@drawable/icon44"
+                android:transitionName="@string/transition_image"
+
+                />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text"
+                android:paddingLeft="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                android:transitionName="@string/transition_day"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_alignBottom="@+id/weatherIconImageDetail"
+                android:paddingLeft="16dp"
+                android:transitionName="@string/transition_condition"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

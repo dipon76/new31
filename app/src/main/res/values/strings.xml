@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Weather card</string>
+    <string name="temp">Temperature</string>
+    <string name="condition">Condition</string>
+    <string name="locate">Dhaka,Bangladesh</string>
+    <string name="transition_image">image</string>
+    <string name="transition_day">day</string>
+    <string name="transition_condition">condition</string>
+</resources>
